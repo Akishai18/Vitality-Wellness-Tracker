@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+ 	<nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mealplan.html">Meal Plan Generator</a></li>
+            </ul>
+        </nav>
+        <h1><u><b>Vitality Wellness Tracker</u></b></h1>
+	<h2> Become Your Best Self </h2>
+	<h4> Use our form below to find your Body Mass Index, and we will Provide You with Optimal Recomendations to become your best self. </h4>
+	<h4> Want a comprehensive meal plan to achieve your weight goals? Look No further than our Meal Plan Page where we provide you the best meal plan based on your goals! </h4>
+    </header>
+    <main>
+        <section class="calculator">
+            <h2>BMI Calculator</h2>
+            <label for="age">Age:</label>
+            <input id="age" type="number">
+            <label for="height">Height (cm):</label>
+            <input id="height" type="number">
+            <label for="weight">Weight (kg):</label>
+            <input id="weight" type="number">
+            <button id="calculateBMI">Calculate BMI</button>
+            <button id="reset">Reset</button>
+        </section>
+        <section class="questions" id="questionsSection">
+        </section>
+    </main>
+    <footer>
+        <p id="insights"></p>
+    </footer>
+    <img src="heart.png" alt="A Happy Heart with A Thumbs Up of Approval" class="top-left-image">
+    <script src="script.js"></script>
+</body>
+</html>

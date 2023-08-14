@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Plan Generator</title>
+    <link rel="stylesheet" href="mealplan-style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mealplan.html">Meal Plan Generator</a></li>
+            </ul>
+        </nav>
+        <h1>Meal Plan Generator</h1>
+    </header>
+    <main>
+        <section class="meal-plan">
+            <h2>Generate Your Meal Plan</h2>
+	    <h3> Based on your weight and your goals we will create you a meal plan to follow to acheive your weight goals! </h2>
+            <label for="weightCategory">Select your weight category:</label>
+            <select id="weightCategory">
+                <option value="underweight">Underweight</option>
+                <option value="overweight">Overweight</option>
+            </select>
+            <label for="calories">Enter your daily calorie goal:</label>
+            <input type="number" id="calories">   
+	    <label for="protein">Enter your daily protein goal (g):</label>
+	    <input type="number" id="protein">
+	    <label for="fat">Enter your daily fat goal (g):</label>
+	    <input type="number" id="fat">
+	    <label for="saturatedFat">Enter your daily saturated fat goal (g):</label>
+	    <input type="number" id="saturatedFat">
+	    <label for="cholesterol">Enter your daily cholesterol goal (mg):</label>
+	    <input type="number" id="cholesterol">
+	    <label for="sodium">Enter your daily sodium goal (mg):</label>
+	    <input type="number" id="sodium">
+	    <label for="sugar">Enter your daily sugar goal (g):</label>
+	    <input type="number" id="sugar">
+	    <label for="fiber">Enter your daily fiber goal (g):</label>
+	    <input type="number" id="fiber">
+	    <label for="calcium">Enter your daily calcium goal (mg):</label>
+	    <input type="number" id="calcium">
+	    <label for="carbs">Enter your daily carbohydrate goal (g):</label>
+	    <input type="number" id="carbs">
+	    <label for="vegetarian">Are you a vegetarian?</label>
+            <input type="checkbox" id="vegetarian">
+            <button id="generatePlan">Generate Meal Plan</button>
+            <div id="mealPlanResult"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Meal Plan Generator</p>
+    </footer>
+    <script src="mealplanscript.js"></script>
+</body>
+</html>
